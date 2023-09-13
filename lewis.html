@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html style="background: url(bg3.jpg)no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+<head>
+    <meta charset="UTF-8">
+    <title>Lewis Capaldi</title>
+    <link rel="stylesheet" href="secondstyle.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="logohead" src="mainpage images/banner1.png" alt="logo">
+    </div>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="START.html">Start</a></li>
+            <li><a href="ARTIST.html">Featured</a></li>
+            <li><a href="GENRE.html">Genre</a></li>
+            <li><a href="LANGUAGE.html">Language</a></li>
+            <li><a href="ABOUT.html">About Us</a></li>
+            <li><a href="FEEDBACK.html">Feedback</a></li>
+        </ul>
+    </div>
+<!--Code kat atas untuk Navigation Bar sahaja-->
+<!--Bawah ni code page Artist (gambar dan nama artist)-->
+    <div style="margin-top: 30px;">
+        <table class="artistTable">
+            <tr style="column-span: all;">
+                <td><img src="mainpage images/lewis2.jpg" alt="Lewis Image" width="400px" height="500px"></td>
+            </tr>
+            <tr>
+                <td style="color: yellow;font-size: 40px;"><b><u>Lewis Capaldi</u><span style="font-size: 20px;color: white;">     Lewis Marc Capaldi</span></b></td>
+            </tr>
+        </table>
+    </div>
+<!--Bawah ni code description artist. pesanan untuk groupmate:JANGAN USIK tag <span> DENGAN tag <button>!! -->
+    <div style="margin-left: 300px;margin-right: 300px;">
+        <p style="color: rgb(255, 255, 255);font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+Lewis Capaldi is a Scottish singer-songwriter.He was nominated for the Critics' Choice Award at the 2019 Brit Awards.<span id="dots">...</span><span id="more"><br><br>In March 2019, his single "Someone You Loved" topped the UK Singles Chart where it remained for seven weeks, and in October 2019 it reached number one on the US Billboard Hot 100,
+
+        it was nominated at the 62nd Annual Grammy Awards for Song of the Year and won the 2020 Brit Award for Song of the Year. Capaldi also won the 2020 Brit Award for Best New Artist.</span></p>
+        <button onclick="myFunction()" id="myBtn" class="button">Read more</button>
+    </div>
+<!--Bawah ni code table Lagu-->
+    <div style="margin-bottom: 100px;">
+        <table class="songTable">
+            <tr>
+                <th colspan="3" style="background-color: rgb(0, 0, 0);">Lewis Capaldi's top hits.</th>
+            </tr>
+            <tr style="background-color: rgb(34, 34, 34);"><!--YANG NI TAKYAH TUKAR-->
+              <th>Song</th>
+              <th>Album</th>
+              <th>Release Date</th>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+              <td class="songColumn"><a href="Lyrics Page/LewisLyrics.html" style="color: turquoise;">Before You Go</a></td>
+              <td>Divinely Uninspired to a Hellish Extent</td>
+              <td>November 19, 2019</td>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+              <td class="songColumn"><a href="Lyrics Page/LewisLyrics2.html" style="color: turquoise;">Someone You Loved</a></td>
+              <td>Divinely Uninspired to a Hellish Extent</td>
+              <td>November 8, 2018</td>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+                <td class="songColumn"><a href="Lyrics Page/LewisLyrics3.html" style="color: turquoise;">Bruises</a></td>
+                <td>Divinely Uninspired to a Hellish Extent</td>
+                <td>March 30, 2017</td>
+              </tr>
+          </table>
+    </div>
+<!--Script utk button read more.TAK PAYAH TUKAR APA APA-->
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+</body>
+</html>

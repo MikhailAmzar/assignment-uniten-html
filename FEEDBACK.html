@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html style="background: url(bg4.jpg)no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Vault-Feedback</title>
+    <link rel="stylesheet" href="mainstyle.css">
+<style>
+	h2.marg {
+		margin: 20px 50px 0px 300px
+	}
+	b.tumarg {
+		margin: 20px 200px 0px 0px
+	}
+</style>
+</head>
+
+<body>
+    <div class="logo">
+        <img class="logohead" src="mainpage images/banner2.png" alt="logo">
+    </div>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="START.html">Start</a></li>
+            <li><a href="ARTIST.html">Featured</a></li>
+            <li><a href="GENRE.html">Genre</a></li>
+            <li><a href="LANGUAGE.html">Language</a></li>
+            <li><a href="ABOUT.html">About Us</a></li>
+            <li><a class="active" href="FEEDBACK.html">Feedback</a></li>
+        </ul>
+    </div>
+<form name="feedbackVault" id="feedbackForm" action="display_feedback.php" method="POST">
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Name : <b class="tumarg"><input type="text" name="name"></b></h2>
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Gender : <b class="tumarg">
+		<input type="radio" name="gender" value="male"> <b style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(55, 82, 170);">Male</b>
+		<input type="radio" name="gender" value="female"> <b style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(206, 75, 125);">Female</b>
+	</b></h2>
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Email : <b class="tumarg"><input type="email" name="email"></b></h2>
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Type of Feedback : <b class="tumarg">
+	<select name="typeFeedback">
+		<option value=""> - Please Choose - </option>
+		<option value="Suggestion">Suggestion</option>
+		<option value="Complaint">Complaint</option>
+		<option value="Enquiry">Enquiry</option>
+	</select></b></h2>
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Comment : <b class="tumarg"><textarea name="feedback" rows="5" cols="50"></textarea></b></h2>
+	<h2 class="marg" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(255, 255, 255);">Date & Time : <input type="datetime-local" name="datetime"></h2>
+	<h2 class="marg"><input type="submit" value="Submit"></h2>
+</form>
+
+</body>
+</html>

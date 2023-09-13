@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" style="background: url(bg3.jpg)no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;">
+<head>
+    <meta charset="UTF-8">
+    <title>The Vault-Languages</title>
+    <link rel="stylesheet" href="secondstyle.css">
+</head>
+<body>
+    <div class="logo">
+        <img class="logohead" src="mainpage images/banner1.png" alt="logo">
+    </div>
+
+    <div class="topnav">
+        <ul>
+            <li><a href="START.html">Start</a></li>
+            <li><a href="ARTIST.html">Featured</a></li>
+            <li><a href="GENRE.html">Genre</a></li>
+            <li><a class="active" href="LANGUAGE.html">Language</a></li>
+            <li><a href="ABOUT.html">About Us</a></li>
+            <li><a href="FEEDBACK.html">Feedback</a></li>
+        </ul>
+    </div>
+<!--Code kat atas untuk Navigation Bar sahaja-->
+<!--Bawah ni code table Lagu-->
+    <div style="margin-bottom: 100px;">
+        <table style="margin-left: auto;margin-right: auto;margin-top: 70px;width: 1000px;height: 500px;font-size: 30px;">
+            <tr>
+                <th rowspan="5" style="background-color: black;"><img src="mainpage images/languagebanner.jpg" alt="Language" width="100px"></th>
+                <th colspan="3" style="background-color: rgb(255, 0, 85);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Available songs in other languages</th>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+              <th class="songColumn"><center><a href="LanguageEnglish.html" style="color: rgb(255, 209, 2);font-size: 25px;">English</a></center></th>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+                <th class="songColumn"><center><a href="LanguageBM.html" style="color:  rgb(255, 209, 2);font-size: 25px;">Bahasa Malaysia</a></center></th>
+            </tr>
+            <tr style="background-color: rgb(0, 0, 0);">
+                <th class="songColumn"><center><a href="LanguageKorean.html" style="color:  rgb(255, 209, 2);font-size: 25px;">Korean</a></center></th>
+              </tr>
+          </table>
+    </div>
+<!--Script utk button read more.TAK PAYAH TUKAR APA APA-->
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+    </script>
+</body>
+</html>
